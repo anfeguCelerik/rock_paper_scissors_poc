@@ -1,0 +1,237 @@
+.game-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1b4332;
+  border-radius: 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+
+.history {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.history-item {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.balance {
+  padding: 8px 16px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  font-weight: bold;
+  color: #52b788;
+}
+
+.game-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.choices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.choices button {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #2d6a4f;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.choices button:hover:not(:disabled) {
+  background: #40916c;
+  transform: translateY(-2px);
+}
+
+.choices button.selected {
+  background: #52b788;
+  box-shadow: 0 0 0 2px white;
+}
+
+.choices button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.hand-emoji {
+  font-size: 2em;
+}
+
+.choice-text {
+  font-size: 0.8em;
+  text-transform: capitalize;
+}
+
+.bet-amounts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.bet-amounts button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.bet-amounts button.selected {
+  background: #40916c;
+  box-shadow: 0 0 0 2px #52b788;
+}
+
+.bet-amounts button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.play-button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #52b788;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.play-button:hover:not(:disabled) {
+  background: #74c69d;
+  transform: translateY(-2px);
+}
+
+.play-button:disabled {
+  background: #2d6a4f;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.result-screen {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+
+.choices-display {
+  margin: 20px 0;
+}
+
+.choice-result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.player, .computer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  min-width: 100px;
+}
+
+.vs {
+  font-weight: bold;
+  color: #52b788;
+  font-size: 1.2em;
+}
+
+.result-message {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 20px 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.result-message.win {
+  color: #52b788;
+}
+
+.result-message.lose {
+  color: #e63946;
+}
+
+.winning-amount {
+  font-size: 0.6em;
+  color: #52b788;
+  margin-top: 10px;
+}
+
+.play-again {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  background: #52b788;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.play-again:hover {
+  background: #74c69d;
+  transform: translateY(-2px);
+}
+
+.waiting-message {
+  text-align: center;
+  font-size: 1.2em;
+  padding: 40px 0;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+/* Estilos para el botón de World Chain */
+w3m-button {
+  --w3m-accent-color: #52b788 !important;
+  --w3m-accent-fill-color: #2d6a4f !important;
+}
