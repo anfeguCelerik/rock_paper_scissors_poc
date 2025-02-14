@@ -13,13 +13,20 @@ Este es un Proof of Concept (PoC) que demuestra la integración del World Org Mi
 
 ## Desarrollo
 
-Este PoC demuestra la integración básica con World Org, sirviendo como punto de partida para el uso mas especifico y soportado por las librerias del ecosistema de World App con una membresia o partnership, algunas mejoras:
+Este PoC demuestra una integración básica con World Org, validando la conexión con World Chain en Sepolia. Sin embargo, para una integración más directa y alineada con el ecosistema de World App como partner, se requiere acceso ampliado a la documentación de World ID.
 
-- Implementación de un sistema de rankings
-- Juego multijugador
-- Integración con World ID para verificación de identidad
-- Mejoras en la aleatoriedad usando oráculos o Integracion con World-App
-- Sistema de recompensas y torneos
+Algunas áreas de mejora incluyen:
+
+Implementación de contratos en OP Stack.
+Manejo de off-ramps dentro del ecosistema.
+Expansión del uso de librerías oficiales de World App.
+Además, se pueden explorar optimizaciones como:
+
+Sistema de rankings.
+Modo multijugador.
+Integración con World ID para verificación de identidad.
+Mejora en la aleatoriedad mediante oráculos o integración con World-App.
+Sistema de recompensas y torneos.
   
 ## Requisitos Previos
 
